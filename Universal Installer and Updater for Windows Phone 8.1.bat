@@ -33,7 +33,6 @@ rem Strip quotes if any
 set "filepath=%rawpath:"=%"
 
 for %%A in ("%filepath%") do (
-    set "fullfile=%%~nxA"
     set "filename=%%~nA"
 )
 
@@ -63,7 +62,6 @@ echo --- Folder Mode Selected ---
 echo(
 set /p method="Select action: 1 = Install, 2 = Update: "
 set /p rawfolder="Enter full path to folder containing files: "
-set /p launch="Launch each app after installation? (y/n): "
 
 set "folderpath=%rawfolder:"=%"
 
@@ -79,18 +77,10 @@ for %%F in ("%folderpath%\*.xap" "%folderpath%\*.appx" "%folderpath%\*.appxbundl
 
     if "%method%"=="1" (
         echo Installing !filename!...
-        if /i "%launch%"=="y" (
-            call :runcommand "/installlaunch" "!filepath!"
-        ) else (
-            call :runcommand "/install" "!filepath!"
-        )
+        call :runcommand "/install" "!filepath!"
     ) else (
         echo Updating !filename!...
-        if /i "%launch%"=="y" (
-            call :runcommand "/updatelaunch" "!filepath!"
-        ) else (
-            call :runcommand "/update" "!filepath!"
-        )
+        call :runcommand "/update" "!filepath!"
     )
 )
 
