@@ -1,4 +1,4 @@
-# Universal Installer and Updater for Windows Phone 8.1
+# Universal App Installer and Updater for Windows Phone 8.1
 
 A command-line tool to install or update apps on Windows Phone 8.1 devices using `.xap`, `.appx`, or `.appxbundle` files.
 
