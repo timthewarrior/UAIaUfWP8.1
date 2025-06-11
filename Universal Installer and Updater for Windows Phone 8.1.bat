@@ -1,12 +1,12 @@
 @echo off
 setlocal enabledelayedexpansion
-title Windows Phone 8.1 XAP & Appx/Bundle Installer
+title Universal App Installer and Updater for Windows Phone 8.1
 
 :main
 cls
 echo(
 echo =============================================================
-echo [1m[4m       Windows Phone 8.1 XAP & Appx/Bundle Installer[0m
+echo [1m[4m  Universal App Installer and Updater for Windows Phone 8.1[0m
 echo =============================================================
 echo(
 echo 1. Install/Update a Single File
