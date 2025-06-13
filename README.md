@@ -5,8 +5,7 @@ A command-line tool to install or update apps on Windows Phone 8.1 devices using
 > **Requirements**  
 > - Your device **must be jailbroken**  
 > - The **Windows Phone 8.1 SDK** must be installed  
-        - You can download Phone 8.1 SDK here: https://mega.nz/folder/ycJgUbjD#YimioYNHUL8SXy7XDifj8g
-        - In case you still run into issues, also install Phone 8.0 SDK: https://mega.nz/folder/qYAwDTKa#CunfmIhIV9Jy80PmUBzZIg
+        - You can download Phone 8.1 SDK here: https://mega.nz/folder/ycJgUbjD#YimioYNHUL8SXy7XDifj8g (In case you still run into issues, also install Phone 8.0 SDK: https://mega.nz/folder/qYAwDTKa#CunfmIhIV9Jy80PmUBzZIg)
 > - Windows 7/8/10 with command-line access
 
 ## Features
