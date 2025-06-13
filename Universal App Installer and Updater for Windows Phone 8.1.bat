@@ -11,13 +11,15 @@ echo =============================================================
 echo.
 echo 1. Install/Update a Single File
 echo 2. Install/Update from Folder
-echo 3. Exit
+echo 3. About+Credits
+echo 4. Exit
 echo.
-set /p choice="Choose an option (1-3): "
+set /p choice="Choose an option (1-4): "
 
 if "%choice%"=="1" goto singlefile
 if "%choice%"=="2" goto folder
-if "%choice%"=="3" exit
+if "%choice%"=="3" goto about
+if "%choice%"=="4" exit
 goto main
 
 :singlefile
@@ -135,3 +137,26 @@ if errorlevel 1 (
 )
 endlocal & set "%3=%exitcode%"
 exit /b
+
+:about
+cls
+echo.
+echo =============================================================
+echo                    About + Credits
+echo =============================================================
+echo.
+echo This program was made by timthewarrior on GitHub
+echo with the help of ChatGPT.
+echo.
+echo Version: v0.1.0
+echo.
+echo 1. Open GitHub Repository
+echo 2. Return to Main Menu
+echo.
+set /p aboutchoice="Choose an option (1-2): "
+if "%aboutchoice%"=="1" (
+    start https://github.com/timthewarrior/UAIaUfWP8.1
+    goto about
+)
+if "%aboutchoice%"=="2" goto main
+goto about
